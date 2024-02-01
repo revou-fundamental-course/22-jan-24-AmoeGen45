@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Groceries</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Responsive Header start -->
+
+    <header class="header-wrapper">
+        <img class="logo" alt="logo1" src="assets/logo1.png" /> <!--menampilkan logo moqups-->
+        <div class="menu">                                      <!--membungkus tombol menu-->
+            <button>Home</button>
+            <button>Our Package</button>
+            <button>Call Us</button>
+        </div>
+    </header>
+
+    <!-- Responsive Header end -->
+
+    <div class="egroc">
+        <h1>Top Rated E-Groceries Shop in Indonesian</h1>            
+    </div>
+    <div class="every">
+        <p>Every Day with best ingrediencs</p>
+    </div>
+
+    <!-- Banner Autoslide start -->
+    
+
+    <main class="main-content"></main>
+    <h3>Our <span id="nama"></span>Package</h3>
+
+    <!--  
+    <div>
+      <div id="slider">
+        <div id="slides">
+            <div class="slide"><img src="assets/placeholder1.png" alt="placeholder1"></div>
+            <div class="slide"><img src="assets/placeholder2.png" alt="placeholder2"></div>
+            <div class="slide"><img src="assets/placeholder3.png" alt="placeholder3"></div>
+        </div>
+      </div>  
+    </div>  
+    --> 
+
+    <div>
+        <img
+        class="img-slideshow"
+        src="assets/placeholder4.jpg
+        "/>
+        <img
+        class="img-slideshow"
+        src="assets/placeholder5.jpg"
+        />
+        <img
+        class="img-slideshow"
+        src="assets/placeholder6.jpg"
+        />
+        <img
+        class="img-slideshow"
+        src="assets/placeholder7.jpg
+        "/>
+        <img
+        class="img-slideshow"
+        src="assets/placeholder8.jpg"
+        />
+        <img
+        class="img-slideshow"
+        src="assets/placeholder9.jpeg"
+        />
+        <button onclick="plusDivs(-1)">Previous</button>
+        <button onclick="plusDivs(1)">Next</button>
+
+        <p>"setiap hari beli sayur dan buah setiap hari"</p>
+
+    </div>
+    
+
+    
+        <p>Florence Hughes</p>
+        <p>Ibu rumah tangga, 28</p>
+    
+
+    <!-- Banner Autoslide end -->
+
+    <!-- validasi input nama & email start -->
+
+    <div class="responsive"> 
+        <div>
+
+            <h1>Contact Us</h1><br>
+            <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p><br>
+
+            <!-- VALIDASI  input nama -->
+            
+            <label>Your Name:</label><br>
+            <input id="input-name" name="name" type="text" required placeholder="input name">
+            <p id="name-error" class="error-message"></p>
+            
+            <!-- VALIDASI input email -->
+
+            <label>Your Email:</label><br>
+            <input id="input-email" name="email" type="email" required="true" placeholder="input email">
+            <p id="email-error" class="error-message"></p>
+
+            <label for="interested">What are you interested in?</label><br>
+                           
+                <select id="interested" name="interested">
+                    <option value="food">Apple</option>
+                    <option value="gadget">Kiwi</option>
+                    <option value="fashion">Pear</option>
+                    <option value="sport">Guava</option>
+                    <option value="fashion">Banana</option>
+                    <option value="sport">Carrot</option>
+                </select><br>
+            
+            <button id="tombol-kirim">Send</button>
+                                   
+        </div>    
+
+        
+
+
+    </div>
+
+    <div>
+        <ul class="container-product-info">
+            <ul class="ul-product-info">
+                <li class="li-product-info">
+                    <p>Uses this space to provide users with more information about your offer. 
+                    Consider it a follow-up to your headline and explain the benefits of your service product</p>
+                    <p>Your First feature, written in the form of a benefit statement.</p>
+                    <p>Your Second feature, written in the form of a benefit statement.</p>
+                    <p>Your Third feature, written in the form of a benefit statement.</p>
+                </li>
+            </ul>             
+           
+        </ul>
+    </div>
+
+    <!-- validasi input nama & email end -->
+   
+    <script src="js/script.js"></script>
+
+</body>
+
+<footer class="footer">
+    
+    <p>© 2024 E-Groceries</p>
+            
+       
+</footer>
+
+</html>
